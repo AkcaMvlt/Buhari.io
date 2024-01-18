@@ -1,0 +1,263 @@
+/*
+Theme Name: GeneratePress Child
+Description: Default GeneratePress child theme
+Author: Tony Amsterdam
+Template: generatepress
+*/
+
+/* =Reset
+-------------------------------------------------------------- */
+
+
+
+/* =Menu
+----------------------------------------------- */
+
+.main-navigation, .sub-menu li{
+	background: rgba(0,0,0,0.7) !important;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .widget, .inside-footer-widgets { 
+	 border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	background: rgba(0,0,0,0.7) !important;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+	 }
+.site-info{
+	background: none;
+}
+
+.inside-article,
+.sidebar .widget,
+.comments-area,
+.page-header,
+.header-widget,
+.paging-navigation,
+.nav-links, #nav-below {
+	background: transparant !important;
+}
+
+.footer-widgets{
+   background-color: transparent;
+	 font-size: 14px;
+	 padding: 0;
+	 border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	 }
+.footer-widgets img{
+	 border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	 }
+.footer-widgets img:hover{
+	 border: 1px solid #000;
+	 }
+
+.inside-footer-widgets {
+  padding: 10px 0 0 0;
+	  }
+.inside-header { 
+  padding-bottom: 0 !important;
+	 }
+.inside-article, .page-header, .comments-area, .nav-links, #nav-below  { 
+   background: rgba(0,0,0,0.7) !important;
+	 padding: 20px 40px 20px 50px;
+	 border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+	 } 
+
+.main-navigation li:hover > a, .main-navigation .main-nav ul li a:hover, .main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a {
+    background: rgba(0,0,0,0.5) !important;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+		 }
+		 
+#menu-menu2 li, #menu-menu2 li a{
+	background-color: #dd8500 !important;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+	margin-left: 5px;
+}
+img, h4.widget-title{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	}
+
+/* Site header */
+#masthead { 
+	background-color: transparent;
+	 }
+.main-title {
+	margin: 0;
+	font-size: 50px;
+	line-height: 1.2em;
+}
+.site-logo {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	max-width: 100%;
+}
+.site-description {
+	/*color:#aaa;*/
+	margin: 0;
+}
+.inside-header {
+	padding: 10px 0 10px 0;
+}
+header-widget {
+  float: right;
+	overflow: hidden;
+	max-width: 50%;
+	background-color: transparant !important;
+}
+
+.header-widget .textwidget{
+  padding: 0 !important;
+	margin: 0 !important;
+	border: 0 !important;
+	background-color: transparant !important;
+ }
+
+hr {
+  color: #333 !important;
+  margin-top: 40px;
+    margin-bottom: 40px;
+    border-style: inset;
+    border-width: 1px;
+} 
+	
+/* =Start custom CSS
+----------------------------------------------- */
+body.home {
+	background-position: center top;
+	background-image: url(../../uploads/2023/05/backgr14.jpg);
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body.page-id-151 {
+	background-position: center top;
+  background-repeat: no-repeat;
+	background-image: url(../../uploads/2023/05/backgr15.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+body.page-id-153 {
+	background-position: center top;
+  background-repeat: no-repeat;
+	background-image: url(../../uploads/2023/05/backgr11.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+body.page-id-155 {
+	background-position: center top;
+  background-repeat: no-repeat;
+	background-image: url(../../uploads/2023/05/backgr12.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+body.page-id-157 {
+	background-position: center top;
+  background-repeat: no-repeat;
+	background-image: url(../../uploads/2023/05/backgr13.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+body.page-id-235 {
+	background-position: center top;
+  background-repeat: no-repeat;
+	background-image: url(https://www.highclasstantricmaia.com/wp-content/uploads/2022/08/backgr16.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#content {
+ background: none !important
+   }
+.ngg-album{ 
+   display: block;
+	 font-size: 14px;
+    max-width: 100%;
+    float:left;
+    margin-right: 25px;
+		border: none !important;
+	 }
+.ngg-album .ngg-albumtitle a { 
+  font-size: 22px;
+	font-weight: normal;
+	padding-left: 10px;
+	}
+
+
+.ngg-description {
+  display: none;
+  padding-left: 10px;
+	padding-right: 10px; 
+	}
+.ngg-thumbnail img {
+	background-color:#999 ;
+	border: none;
+	margin:5px 0px 5px 5px;
+	padding:1px;
+	position:relative;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.ngg-thumbnail img:hover {
+	background-color: #000;
+}
+.ngg-gallery-thumbnail img {
+	background-color:#999;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	display:block;
+	margin:5px 0px 5px 5px;
+	padding:1px;
+	position:relative;
+}
+.ngg-gallery-thumbnail img:hover {
+	background-color: #000  ;
+}
+.ngg-galleryoverview { 
+  padding-bottom: 10px;
+	 }
+	 
+	 
+.tribe-events-single-section, .tribe-events-schedule, .tribe-events-ical, .tribe-events-cal-links { 
+       display: none !important; 
+			 }
+.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a,
+.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore a,
+.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore {
+	display: none;
+}
+
+.events-archive.events-gridview #tribe-events-content table.tribe-events-calendar td.tribe-events-past .type-tribe_events {
+	border: none;
+	box-shadow: none;
+}
+
+.tribe-events-page-title, .tribe-events-sub-nav li a, .tribe-events-back a { font-weight: normal !important; }
+	
+.tribe-events-single-event-title  { 
+          margin:25px 0 20px !important; }
+					
+					
+
