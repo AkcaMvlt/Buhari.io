@@ -1,0 +1,1 @@
+$(document).ready((function(){$(".hero-slider").length>0&&new Swiper(".hero-slider",{slidesPerView:1,slidesPerColumn:1,paginationClickable:!0,loop:!0,effect:"fade",speed:1e3,autoplay:{delay:5e3},pagination:{el:".swiper-paginations",clickable:!0}})}));
