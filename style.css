@@ -59,7 +59,7 @@ p {
 }
 @media screen and (min-width: 37.5em) {
   .case-study {
-    height: 300px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 45em) {
