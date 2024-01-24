@@ -1,0 +1,387 @@
+#home-slider {
+    position: relative;
+    margin: 0px;
+    vertical-align: bottom;
+    z-index: 1;
+    width: 100%;
+    display: none;
+}
+
+#slider-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.ns_nerveSlider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    text-align: left;
+    -ms-interpolation-mode: bicubic;
+}
+
+.ns_nerveSlider .ns_slides {
+    width: 100%;
+    height: 100%;
+}
+
+.ns_nerveSlider .ns_slides .ns_slidesTrack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: visible;
+}
+
+.ns_nerveSlider .ns_slideContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: auto;
+    word-spacing: auto;
+}
+
+.ns_nerveSlider.heightAdaptable .ns_slideContainer img.ns_slideImage {
+    width: 100%;
+    height: auto;
+}
+
+.ns_slideContainer.ns_decoy.ns_ls.left {
+    position: absolute;
+    left: -100%;
+}
+
+.ns_slideContainer.ns_decoy.ns_ls.right {
+    position: absolute;
+    right: -100%;
+}
+
+.ns_slideContainer.ns_decoy.ns_ls.up {
+    position: absolute;
+    top: -100%;
+}
+
+.ns_slideContainer.ns_decoy.ns_ls.down {
+    position: absolute;
+    bottom: -100%;
+}
+
+.ns_nerveSlider.ns_horizontal .ns_slideContainer {
+    display: inline-block;
+}
+
+.ns_nerveSlider.ns_vertical .ns_slideContainer {
+    display: block;
+}
+
+.ns_nerveSlider .ns_slideContainer img {
+    position: absolute;
+    z-index: auto;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.ns_nerveSlider .ns_slideContainer > a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.ns_nerveSlider .ns_timer {
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    width: 0;
+}
+
+.ns_nerveSlider .ns_prevButton,
+.ns_nerveSlider .ns_nextButton {
+    width: 70px;
+    height: 70px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    z-index: 51;
+    top:46%;
+    top:calc(50% - 35px);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin:auto;
+}
+
+.ns_nerveSlider .ns_prevButton {
+    position: absolute;
+    left: 60px;
+    -webkit-transform: translateX(-130px);
+    -moz-transform: translateX(-130px);
+    -ms-transform: translateX(-130px);
+    -o-transform: translateX(-130px);
+    transform: translateX(-130px);
+}
+
+.ns_nerveSlider .ns_nextButton {
+    position: absolute;
+    right: 60px;
+    -webkit-transform: translateX(130px);
+    -moz-transform: translateX(130px);
+    -ms-transform: translateX(130px);
+    -o-transform: translateX(130px);
+    transform: translateX(130px);
+}
+
+#slider-container:hover .ns_nerveSlider .ns_nextButton,#slider-container:hover .ns_nerveSlider .ns_prevButton {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.ns_nerveSlider .ns_prevButton div, .ns_nerveSlider .ns_nextButton div, .ns_nerveSlider .ns_pauseButton div {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0.7;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.ns_nerveSlider .ns_pauseButton {
+    position: absolute;
+    right: 0px;
+    left:0px;
+    top: 46%;
+    top:calc(50% - 35px);
+    margin:auto;
+    z-index: 51;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ns_nerveSlider:hover .ns_pauseButton,#slider-container:hover .ns_pauseButton {
+    opacity: 1;
+    -webkit-animation-name: pop;
+    animation-name: pop;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.ns_nerveSlider .ns_pauseButton div {
+    width: 100%;
+    height: 100%;
+}
+
+.ns_nerveSlider .ns_dummyImage {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.ns_nerveSlider .ns_dummyImage div {
+    height: 100%;
+    width: 100%;
+}
+
+.ns_nerveSlider .ns_dummyImage div {
+    background: tranparent url("icons/dummy.png") 50% 50% no-repeat;
+}
+
+.ns_nerveSlider .ns_loadSpinner div {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 46%;
+    top: calc(50% - 6px);
+    left: 46%;
+    left: calc(50% - 6px);
+    border-radius: 12px;
+    transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    animation: cssload-loader 1.15s ease-in-out infinite;
+    -o-animation: cssload-loader 1.15s ease-in-out infinite;
+    -ms-animation: cssload-loader 1.15s ease-in-out infinite;
+    -webkit-animation: cssload-loader 1.15s ease-in-out infinite;
+    -moz-animation: cssload-loader 1.15s ease-in-out infinite;
+    z-index: 1;
+}
+
+.ns_nerveSlider .ns_loadSpinner div:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -24px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+}
+
+.ns_nerveSlider .ns_loadSpinner div:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+}
+
+.ns_nerveSlider .ns_dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 200;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ns_nerveSlider:hover .ns_dots {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+.ns_nerveSlider .ns_dots .ns_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    float: left;
+    margin: 0 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ns_nerveSlider .ns_dots .ns_dot:first-child {
+    margin-left: 0;
+}
+
+.ns_nerveSlider .ns_dots .ns_dot:last-child {
+    margin-right: 0;
+}
+
+.ns_nerveSlider .ns_dots .ns_dot.ns_selected {
+    cursor: default;
+}
+
+.ns_nerveSlider .ns_slideContent {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    white-space: normal;
+}
+
+.ns_nerveSlider.heightAdaptable .ns_slideContainer .ns_slideContent {
+    height: auto;
+}
+.ns_nerveSlider .ns_slideContent div {
+    position: absolute;
+    display: block;
+    width: auto;
+}
+.ns_nerveSlider .ns_slideContent div.top-right {
+    top: 60px;
+    right: 0px;
+    text-align: right;
+}
+.ns_nerveSlider .ns_slideContent div.top-left {
+    top: 60px;
+    left: 0px;
+    text-align: left;
+}
+.ns_nerveSlider .ns_slideContent div.bottom-right {
+    bottom: 60px;
+    right: 0px;
+    text-align: right;
+}
+.ns_nerveSlider .ns_slideContent div.bottom-left {
+    bottom: 60px;
+    left: 0px;
+    text-align: left;
+}
+.ns_nerveSlider .ns_slideContent div h1 {
+    padding: 25px 60px;
+    margin: auto;
+    display: inline-block;
+    font-size: 40px;
+}
+.ns_nerveSlider .ns_slideContent div p {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    font-size: 22px;
+}
+.ns_nerveSlider .ns_slideContent div p span {
+    padding: 20px 60px;
+    margin: 0px;
+    display: inline-block;
+    font-size: 22px;
+}

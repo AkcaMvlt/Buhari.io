@@ -1,0 +1,10 @@
+body {
+    display:block;
+    background:#fff;
+}
+#slider-container,#featured-image-container {
+    display: none;
+}
+#header-menu {
+    pointer-events:auto;
+}
