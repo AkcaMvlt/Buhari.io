@@ -2,169 +2,83 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Turis Mulayim</title>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <title>CodePen - A Pen by Dmitry Semenov</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="case-study-gallery">
-  <h1 class="title">Imam Buhari Camii</h1>
+<button id="btn">Resimlere Git</button>
 
-<div class="case-study study1">
-	<figure>
-		<img src="KapakResimleri/1-regaib.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Regaib Gecesi 11.11.2024</h2>
-    <a class="case-study__link" href="Resimler/Resimler/Regaib.htm">Tikla</a>
-  </div>
-</div>
-  
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-<div class="case-study study2">
-	<figure>
-		<img src="KapakResimleri/2-ahde.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Ahde Vefa 30.12.2023</h2>
-    <a class="case-study__link" href="Siteler/2ahdevefa.htm">Tikla</a>
-  </div>
-</div>
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
 
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
 
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <div class="pswp__container">
+            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
 
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
 
-  
-<div class="case-study study3">
-	<figure>
-		<img src="KapakResimleri/3-insaat.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">İnşaat 22.04.2023</h2>
-    <a class="case-study__link" href="Siteler/3insaat.htm">Tikla</a>
-  </div>
-</div>
-  
-<div class="case-study study4">
-	<figure>
-		<img src="KapakResimleri/4-meclis.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Meclis 28.04.2018</h2>
-    <a class="case-study__link" href="Siteler/5meclis.htm">Tikla</a>
-  </div>
-</div>
-  
-<div class="case-study study5">
-	<figure>
-	<img src="KapakResimleri/5-gezi.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Gezi 01.05.2017</h2>
-    <a class="case-study__link" href="Siteler/4gezi.htm">Tikla</a>
-  </div>
-</div>
-  
-<div class="case-study study6">
-	<figure>
-		<img src="KapakResimleri/6-hocalar.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Hocalar 30.05.2011</h2>
-    <a class="case-study__link" href="Siteler/7hocalar.htm">Tikla</a>
-  </div>
-</div>
+            <div class="pswp__top-bar">
 
+                <!--  Controls are self-explanatory. Order can be changed. -->
 
-<div class="case-study study7">
-	<figure>
-	<img src="KapakResimleri/7-eski.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Eski Dostlar 1980</h2>
-    <a class="case-study__link" href="Siteler/8eskidostlar.htm">Tikla</a>
-  </div>
-</div>
+                <div class="pswp__counter"></div>
 
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-<div class="case-study study12">
-	<figure>
-	<img src="KapakResimleri/8-maden.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Maden Gezisi 2009</h2>
-    <a class="case-study__link" href="Siteler/12Maden.htm">Tikla</a>
-  </div>
-</div>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
 
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-<div class="case-study study8">
-	<figure>
-	<img src="KapakResimleri/9-turkiye.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Gezi Istanbul 2011</h2>
-    <a class="case-study__link" href="https://imamibuhari.github.io/imami-Buhari.io/9Turkiye.htm">Tikla</a>
-  </div>
-</div>
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
 
-<div class="case-study study10">
-	<figure>
-	<img src="KapakResimleri/10-buyukLokel.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Büyük Lokel 2009</h2>
-    <a class="case-study__link" href="https://cami-buhari.github.io/Cami.io/10Lokel.htm">Tikla</a>
-  </div>
-</div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
 
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
 
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
 
+          </div>
 
-
-
-
-
-
-<div class="case-study study11">
-	<figure>
-	<img src="KapakResimleri/11-bos1.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Vefat Edenler </h2>
-    <a class="case-study__link" href="https://cami-buhari.github.io/Cami.io/11Cenaze.htm">Tikla</a>
-  </div>
-</div>
-
-
-
-
-
-
-
-<div class="case-study study9">
-	<figure>
-	<img src="KapakResimleri/Film.jpg" alt=""class="center" width="450" height="300">
-	</figure>
-  <div class="case-study__overlay">
-  	<h2 class="case-study__title">Diğer Programlar </h2>
-    <a class="case-study__link" href="https://imamibuhari.github.io/imami-Buhari.io/">Tikla</a>
-  </div>
-</div>
-
-
-
-
-
-
+        </div>
 
 </div>
 <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
