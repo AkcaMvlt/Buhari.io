@@ -1,0 +1,65 @@
+div.cc-checkbox-container:not(:last-child) a {
+  border-right-width: 0px;
+}
+a.cc-link label {
+  font-size: 14px;
+}
+.cc-revoke, .cc-window {
+  font-family: Cairo;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+div.cc-center-xtd div.cc-checkbox-container {
+  border: 0px solid #ccc;
+}
+.box1.moduletable, .box1.widget, .box1.g-outer-box, .box1 > .g-content {
+  background: #0000005c;
+}
+.jl-border-rounded {
+  border-radius: 15px;
+}
+#g-sidebar .moduletable, #g-aside .moduletable {
+  padding: 20px;
+  background-color: #fff0;
+  margin-bottom: 0px;
+}
+#events .item .title {
+  min-height: 35px;
+  font-size: 1.0em;
+}
+.box1.moduletable, .box1.moduletable h1, .box1.moduletable h2, .box1.moduletable h3, .box1.moduletable h4, .box1.moduletable h5, .box1.moduletable h6, .box1.moduletable strong, .box1.moduletable i, .box1.widget, .box1.widget h1, .box1.widget h2, .box1.widget h3, .box1.widget h4, .box1.widget h5, .box1.widget h6, .box1.widget strong, .box1.widget i, .box1 > .g-content, .box1 > .g-content h1, .box1 > .g-content h2, .box1 > .g-content h3, .box1 > .g-content h4, .box1 > .g-content h5, .box1 > .g-content h6, .box1 > .g-content strong, .box1 > .g-content i {
+  color: #d0c491;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "cairo";
+  font-weight: 600;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.rounded.moduletable, .rounded.widget, .rounded.g-outer-box, .rounded > .g-content {
+  border-radius: 1.0rem;
+}
+.jl-card-secondary {
+  background-color: #1111118f;
+  color: #fff;
+  border-radius: 1.0rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,.07);
+}
+.jl-light .jl-button-default {
+  background-color: #ac5f5f00;
+  color: #d0c491;
+  border-color: #d0c491;
+}
+.blog .jl-article, .com-content-article .jl-article {
+  background-color: #fff0;
+  padding: 1.5rem;
+}
+.border-top {
+  border-top: 1px solid #d0c491 !important;
+}
+h1, h2, h3, h4, h5, h6, strong {
+  color: #d0c491;
+div.cc-center-xtd div.cc-checkbox-container {
+  border: 0px solid #ccc;
+}
